@@ -1,95 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Albi – Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8" />
+  <title>Albi – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-    <div class="page">
-        <!-- HEADER -->
-        <header>
-            <div>
-                <h1>Albi Zhaku</h1>
-                <div class="subtitle">Computer Science @ NJIT</div>
-            </div>
-            <nav>
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-                <a href="Resume.pdf">Resume</a>
-                <a href="https://github.com/AlbiXD" target="_blank">GitHub</a>
-            </nav>
-        </header>
+  <div class="page">
+    <!-- HEADER -->
+    <header>
+      <div>
+        <h1>Albi Zhaku</h1>
+        <div class="subtitle">Computer Science @ NJIT</div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="blogs/index.html">Blog</a>
+        <a href="#about">About</a>
+        <a href="Resume.pdf">Resume</a>
+        <a href="https://github.com/AlbiXD" target="_blank">GitHub</a>
+      </nav>
+    </header>
 
-        <!-- INTRO -->
-        <section>
-            <p>
-                I’m a CS student interested in low-level systems, the fun stuff nobody wants to touch.
-            </p>
-            <p class="muted">
-                This page is a short overview of the projects I think are the coolest!
-            </p>
-        </section>
+    <!-- INTRO -->
+    <section>
+      <p>
+        I’m a CS student interested in low-level systems — the fun stuff nobody wants to touch.
+      </p>
+      <p class="muted">
+        This page is a short overview of the projects I think are the coolest!
+      </p>
+    </section>
 
-        <!-- PROJECTS -->
-        <section id="projects">
-            <h2>Selected projects</h2>
-            <ul class="project-list">
-                <li>
-                    <div class="project-title">Distributed Video Filter (MPI + CUDA)</div>
-                    <div class="project-meta">C/C++ · MPI · CUDA · OpenCV · Linux</div>
-                    <p>
-                        Multi-process video processing pipeline with grayscale, blur, and edge detection
-                        filters, implemented in serial, MPI, and GPU versions for comparison.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://github.com/AlbiXD/CS455-Project" target="_blank">GitHub</a>
-                    </div>
-                </li>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Selected projects</h2>
+      <ul class="project-list">
+        <li>
+          <div class="project-title">Distributed Video Filter (MPI + CUDA)</div>
+          <div class="project-meta">C/C++ · MPI · CUDA · OpenCV · Linux</div>
+          <p>
+            Multi-process video processing pipeline with grayscale, blur, and edge detection
+            filters, implemented in serial, MPI, and GPU versions for comparison.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/AlbiXD/CS455-Project" target="_blank">Repo</a>
+          </div>
+        </li>
 
-                <li>
-                    <div class="project-title">Minecraft b1.7.3 Network Protocol (WIP)</div>
-                    <div class="project-meta">C · Networking · TCP/IP · Protocol Design</div>
-                    <p>
-                        Low-level reimplementation of the Minecraft Beta 1.7.3 server protocol in C handling packet
-                        parsing, client handshake, networking, and core game state without any game libraries.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://github.com/AlbiXD/mineserver-c" target="_blank">GitHub</a>
-                    </div>
-                </li>
+        <li>
+          <div class="project-title">Minecraft b1.7.3 Network Protocol (WIP)</div>
+          <div class="project-meta">C · Networking · TCP/IP · Protocol Design</div>
+          <p>
+            Low-level reimplementation of the Minecraft Beta 1.7.3 server protocol in C handling
+            packet parsing, client handshake, networking, and core game state without any game libraries.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/AlbiXD/mineserver-c" target="_blank">Repo</a>
+          </div>
+        </li>
 
-                <li>
-                    <div class="project-title">CHIP-8 Emulator</div>
-                    <div class="project-meta">C · SDL2</div>
-                    <p>
-                        Simple CHIP-8 interpreter that runs classic ROMs with keyboard input and basic
-                        debugging output.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://github.com/AlbiXD/Chip8Emulator" target="_blank">GitHub</a>
-                    </div>
-                </li>
-            </ul>
-        </section>
+        <li>
+          <div class="project-title">CHIP-8 Emulator</div>
+          <div class="project-meta">C · SDL2</div>
+          <p>
+            Simple CHIP-8 interpreter that runs classic ROMs with keyboard input and basic
+            debugging output.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/AlbiXD/Chip8Emulator" target="_blank">Repo</a>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-        <!-- ABOUT -->
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                CS student at NJIT with a strong interest in low-level programming.
-                Outside of school and coding, I like going to the gym and spending time with
-                <a href="george.jpeg" target="_blank">George</a>.
-            </p>
-        </section>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        CS student at NJIT with a strong interest in low-level programming.
+        Outside of school and coding, I like going to the gym and spending time with
+        <a href="george.jpeg" target="_blank">George</a>.
+      </p>
+    </section>
 
-        <footer>
-            <p>Contact: <a href="mailto:az373@njit.edu">az372@njit.edu</a></p>
-        </footer>
-    </div>
+    <footer>
+      <p>Contact: <a href="mailto:az373@njit.edu">az373@njit.edu</a></p>
+    </footer>
+  </div>
 </body>
-
 </html>
